@@ -1,0 +1,29 @@
+<ion-content class="gradient-login">
+    <div class="login-header">
+        <img src="assets/img/releaf-logo-green2.png" width="100px" height="auto">
+        <h1 class="login-h1">Releaf</h1>
+    </div>
+    <div padding class="login-info">
+        <form [formGroup]="form" (ngSubmit)="onConfirm(form.value, form.valid)" novalidate>
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="text" formControlName="username" [(ngModel)]="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" formControlName="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+            <ion-fab center>
+
+                <button class="login-button" tappable [disabled]="!form.valid" type="submit" color="secondary" ion-button full>Login</button>
+            </ion-fab>
+        </form>
+
+    </div>
+
+</ion-content>
+<div class="hide-on-keyboard-open" text-center style="background: white; position: fixed; bottom: 0px; width: 100%; z-index: 1;">
+    <p> Don't have an account ? </p>
+    <button center class="login-button" tappable color="secondary" (click)="goToRegister()" ion-button full>Register</button>
+</div>

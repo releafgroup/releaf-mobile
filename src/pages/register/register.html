@@ -1,0 +1,72 @@
+<ion-content>
+    <div class="about-header">
+        <img src="assets/img/releaf-logo-green2.png">
+        <h1>Releaf</h1>
+    </div>
+    <div padding class="login-info">
+        <ion-item>
+            <ion-label floating>Company Name</ion-label>
+            <ion-input type="text" [(ngModel)]="user.company_name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>WhatsApp Phone number</ion-label>
+            <ion-input type="text" [(ngModel)]="user.phone_number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Commodity you are Supplying (e.g. Maize, Yam)</ion-label>
+            <ion-input type="text" [(ngModel)]="user.products"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-list>
+                <ion-list-header>
+                    Position in Value Chain (e.g. Production, Processing)
+                </ion-list-header>
+                <div *ngFor="let opt of value_chains">
+
+                    <label>
+                            <input type="checkbox" name="vm.selectedPositions[]" [value]="opt" [checked]="selection.indexOf(opt) > -1" (click)="toggleSelection(opt)" />
+                            {{opt}}
+                            </label>
+                </div>
+            </ion-list>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password2"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>How did you find us ?</ion-label>
+            <ion-select [(ngModel)]="user.found_us_via">
+                <ion-option [value]="opt" *ngFor="let opt of found_us_options">{{opt}}</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item *ngIf="user.found_us_via === 'Other'">
+            <ion-label>Please enter value ?</ion-label>
+            <ion-input type="text" [(ngModel)]="user.custom_found_us_via"></ion-input>
+        </ion-item>
+        <ion-fab center>
+            <button tappable (click)="register(user)" ion-button outline>Create My Account</button>
+            <div text-center style="background: white; width: 100%">
+                <p> Already have an account ? </p>
+                <button center class="login-button" tappable color="secondary" (click)="goToLogin()" ion-button full>Login</button>
+            </div>
+
+        </ion-fab>
+    </div>
+
+</ion-content>

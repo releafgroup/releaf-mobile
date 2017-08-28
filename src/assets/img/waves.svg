@@ -1,0 +1,32 @@
+<svg width="1440" height="729" viewBox="0 0 1440 729" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>waves</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2637 -1288)">
+<g id="waves">
+<g id="Line">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 5677.51 1572.51)" fill="url(#paint0_linear)" fill-opacity="0.4"/>
+</g>
+<g id="Line">
+<use xlink:href="#path1_fill" transform="matrix(-1 0 0 1 7475 1288)" fill="url(#paint1_linear)" fill-opacity="0.3"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(3771.08 -458.485 5008.56 5907.12 -2819.94 -2495.07)">
+<stop offset="0" stop-color="#81D76D"/>
+<stop offset="0.0958309" stop-color="#80D66E"/>
+<stop offset="0.36216" stop-color="#67B788"/>
+<stop offset="0.798272" stop-color="#458CAB"/>
+<stop offset="0.98895" stop-color="#2D6EC4"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6000.46 -743 7969.52 9572.8 -4487.04 -4043.4)">
+<stop offset="0" stop-color="#81D76D"/>
+<stop offset="0.0958309" stop-color="#80D66E"/>
+<stop offset="0.36216" stop-color="#67B788"/>
+<stop offset="0.798272" stop-color="#458CAB"/>
+<stop offset="0.98895" stop-color="#2D6EC4"/>
+</linearGradient>
+<path id="path0_fill" d="M 471.931 156.733C 170.033 19.2089 0 156.733 0 156.733L 0 458.485L 3040.51 458.485L 3040.51 85.9683C 2968.4 122.431 2557.97 415.759 2201.64 156.733C 1845.3 -102.293 1730.12 4.52272 1442.31 156.733C 1154.5 308.943 773.83 294.257 471.931 156.733Z"/>
+<path id="path1_fill" d="M 750.928 253.994C 270.553 31.129 0 253.994 0 253.994L 0 743L 4838 743L 4838 139.316C 4723.25 198.406 4070.2 673.76 3503.2 253.994C 2936.21 -165.771 2752.93 7.3293 2294.97 253.994C 1837.01 500.659 1231.3 476.86 750.928 253.994Z"/>
+</defs>
+</svg>
