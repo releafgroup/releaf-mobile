@@ -16,9 +16,24 @@ import { SearchResultService } from '../providers/searchresult/searchresult.serv
 
 import { LoginService } from '../providers/login/login.service';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
+
+
 const cloudSettings: CloudSettings = {
   'core': {
-    'app_id': 'd053e522'
+    'app_id': 'ca21e3cf',
+  },
+  'push': {
+    'sender_id': '514123126844',
+    'pluginConfig': {
+      'ios': {
+        'badge': true,
+        'sound': true
+      },
+      'android': {
+        'iconColor': '#343434'
+      }
+    }
   }
 };
 
@@ -49,7 +64,7 @@ const cloudSettings: CloudSettings = {
     VerificationPage,
     SearchResult
   ],
-  providers: [ LoginService, SearchResultService, IndexService],
+  providers: [ LoginService, SearchResultService, IndexService, Push],
 })
 export class AppModule {
 }

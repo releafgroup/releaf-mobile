@@ -6,6 +6,8 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { TourPage } from '../pages/tour/tour';
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
+import { AlertController } from 'ionic-angular';
 
 export interface PageInterface {
   title: string;
@@ -33,7 +35,7 @@ export class ReleafMobile {
   // @ViewChild(Nav) gets a reference to the app's root nav
   @ViewChild(Nav) private nav: Nav;
 
-  constructor(private platform: Platform) {
+  constructor(private platform: Platform, public push: Push, public alertCtrl: AlertController) {
     // Call any initial plugins when ready
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -69,6 +71,69 @@ export class ReleafMobile {
         });
       }
     });
+
+    this.push.hasPermission()
+  .then((res: any) => {
+
+    if (res.isEnabled) {
+      console.log('We have permission to send push notifications');
+    } else {
+      console.log('We do not have permission to send push notifications');
+    }
+
+  });
+
+// to initialize push notifications
+
+const options: PushOptions = {
+   android: {
+       senderID: '514123126844',
+       forceShow : true,
+       vibrate: true,
+       sound: true
+
+   },
+   ios: {
+       alert: 'true',
+       badge: true,
+       sound: 'false'
+   },
+   windows: {},
+   browser: {
+       pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+   }
+};
+
+const pushObject: PushObject = this.push.init(options);
+
+pushObject.on('notification').subscribe((notification: any) => {
+   let alert = this.alertCtrl.create({
+    title: 'Notification Recieved!',
+    subTitle: notification.title,
+    message: notification.text,
+    buttons: ['Dismiss']
+  });
+  alert.present();
+});
+
+pushObject.on('registration').subscribe((registration: any) => {
+  let alert = this.alertCtrl.create({
+    title: 'Notification Registered!',
+    message: registration.registrationId,
+    buttons: ['Dismiss']
+  });
+  alert.present();
+});
+
+pushObject.on('error').subscribe(error => {
+   let alert = this.alertCtrl.create({
+    title: 'Notification Error!',
+    message: "Push Error",
+    buttons: ['Dismiss']
+  });
+  alert.present();
+});
+
   }
 
   openPage(page: PageInterface) {

@@ -99,6 +99,6 @@
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <plugin name="phonegap-plugin-push" spec="^1.10.5">
-        <variable name="SENDER_ID" value="340278238211" />
+        <variable name="SENDER_ID" value="256970784885" />
     </plugin>
 </widget>
