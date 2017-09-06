@@ -36,7 +36,6 @@
         "lint": "tslint \"src/**/*.ts\" --exclude=src/**/*.d.ts",
         "docs": "typedoc --options typedoc.json --exclude '**/*+(e2e|spec|index).ts' ./src/",
         "outdated": "yarn outdated",
-        "precommit": "npm run lint",
         "prepush": "npm test"
     },
     "betterScripts": {
