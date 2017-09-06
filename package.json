@@ -20,6 +20,24 @@
         "url": ""
     },
     "scripts": {
+        "dev": "bnr dev",
+        "build": "bnr build",
+        "build-dev": "bnr build-dev",
+        "clean": "bnr clean",
+        "test": "bnr test",
+        "test:watch": "bnr test-watch",
+        "ios:dev": "bnr ios:dev",
+        "ios:release": "bnr ios:release",
+        "android:dev": "bnr android:dev",
+        "android:release": "bnr android:release",
+        "commit": "git-cz",
+        "release": "standard-version --no-verify",
+        "push": "git push --follow-tags origin master",
+        "lint": "tslint \"src/**/*.ts\" --exclude=src/**/*.d.ts",
+        "docs": "typedoc --options typedoc.json --exclude '**/*+(e2e|spec|index).ts' ./src/",
+        "outdated": "yarn outdated",
+        "precommit": "npm run lint",
+        "prepush": "npm test"
     },
     "betterScripts": {
         "dev": {
@@ -113,6 +131,7 @@
         "cordova-plugin-vibration": "~2.1.1",
         "cordova-plugin-whitelist": "~1.3.0",
         "cordova-sqlite-storage": "^2.0.4",
+        "handlebars": "^4.0.10",
         "ionic-angular": "2.2.0",
         "ionic-native": "2.4.1",
         "ionic-plugin-keyboard": "~2.2.1",

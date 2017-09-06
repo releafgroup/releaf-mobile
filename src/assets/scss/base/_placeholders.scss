@@ -1,0 +1,118 @@
+$green: #81d76d;
+$lightgray: #F5F5F5;
+$gray: #8e8e8e;
+$gray2: #e0e0e0;
+$darkgray: #535353;
+$blue: #5387CB;
+
+%no-outline{
+  &:focus{
+    outline: 0;
+  }
+}
+%trans{
+  transition: 0.4s;
+}
+%grad{
+  background: linear-gradient(48.84deg, #81D76D -6.14%, #81D76D -6.13%, #80D66E 10.79%, #67B788 53.16%, #458CAB 88.93%, #2D6EC4 111.64%);
+}
+%grad2{
+  background-image: linear-gradient(127.14335515224332deg, #009789 6.1%, #007fa2 62.6%, #007ea6 69.5%, #007cb2)
+}
+
+p, li{
+  font-size: 14px;
+}
+a{
+  text-decoration: none !important;
+}
+
+.normal{
+  font-weight: 400;
+}
+.bold{
+  font-weight: 500;
+}
+.light{
+  font-weight: 300;
+}
+.thin{
+  font-weight: 100;
+}
+.white{
+  color: white;
+}
+.lightgray{
+  color: $lightgray;
+}
+.green{
+  color: $green;
+}
+span.green{
+  cursor: pointer;
+}
+.gray{
+  color: $gray;
+}
+.darkgray{
+  color: $darkgray;
+}
+.no-top-marg{
+  margin-top: 0;
+}
+.btn-flat{
+  border: 0;
+  background: transparent;
+}
+.btn-green{
+  display: inline-block;
+  background-color: $green;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  @extend %no-outline;
+  @extend %trans;
+
+  &:hover, &:visited{
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+}
+.btn-white{
+  @extend .btn-green;
+  background: white;
+  color: $blue;
+  font-family: 400;
+  font-size: 16px;
+
+  &:hover, &:visited{
+    color: $blue;
+  }
+}
+
+.btn-white-bd{
+  @extend .btn-white;
+  border: 1px solid $blue;
+}
+.full{
+  width: 100%;
+}
+
+.content{
+  padding: 0 50px;
+}
+
+// Margins and Paddings 
+.m-b-md {
+  margin-bottom: 20px;
+}
+.m-b-lg {
+  margin-bottom: 30px;
+}
+.m-b-xl {
+  margin-bottom: 40px;
+}
