@@ -1,31 +1,9 @@
 .tour{
-  @extend %grad;
   height: 100vh;
+  @extend %grad;
+  @include tour-mixin(50px, white, 34px, 40px, white);
 
-  .logo{
-    padding-top: 50px;
-    color: white;
-    font-size: 34px;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 400;
-
-    img{
-      height: 40px;
-    }
-  }
   .tagline{
     margin-bottom: 100px;
-  }
-
-  .waves{
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-  }
-  .content{
-    position: relative;
-    z-index: 1;
-    color: white;
   }
 }

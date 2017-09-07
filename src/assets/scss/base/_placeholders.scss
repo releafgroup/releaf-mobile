@@ -19,6 +19,33 @@ $blue: #5387CB;
 %grad2{
   background-image: linear-gradient(127.14335515224332deg, #009789 6.1%, #007fa2 62.6%, #007ea6 69.5%, #007cb2)
 }
+@mixin tour-mixin($logoPaddingTop, $logoColor, $logoFontSize, $logoImageHeight, $contentTextColor){
+
+  .logo{
+    padding-top: $logoPaddingTop;
+    color: $logoColor;
+    font-size: $logoFontSize;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+  
+    img{
+      height: $logoImageHeight;
+    }
+  }
+
+  .waves{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .content{
+    position: relative;
+    z-index: 1;
+    color: $contentTextColor;
+  }
+}
+
 
 p, li{
   font-size: 14px;
@@ -62,6 +89,7 @@ span.green{
 }
 .btn-flat{
   border: 0;
+  padding: 0;
   background: transparent;
 }
 .btn-green{
@@ -93,7 +121,6 @@ span.green{
     color: $blue;
   }
 }
-
 .btn-white-bd{
   @extend .btn-white;
   border: 1px solid $blue;
@@ -115,4 +142,7 @@ span.green{
 }
 .m-b-xl {
   margin-bottom: 40px;
+}
+.m-t-xl {
+  margin-top: 40px;
 }

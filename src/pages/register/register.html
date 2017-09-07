@@ -1,8 +1,48 @@
 <ion-content>
-    <div class="about-header">
-        <img src="assets/img/releaf-logo-green2.png">
-        <h1>Releaf</h1>
-    </div>
+        <div class="signup">
+            <div class="logo">
+                <img src="assets/img/releaf-logo-green2.png" alt="Releaf Logo"/>
+                Releaf
+            </div>
+            <div class="content">
+                <h3 class="text-center light m-b-lg">
+                    Sign Up
+                </h3>
+                <div>
+                    <div class="form-group m-b-xl">
+                        <label>Company Name</label>
+                        <ion-input type="text"  [(ngModel)]="user.company_name" autofocus></ion-input>
+                    </div>
+                    <div class="form-group m-b-xl">
+                        <label>Email</label>
+                        <ion-input type="email"  [(ngModel)]="user.email"></ion-input>
+                    </div>
+                    <div class="form-group m-b-xl">
+                        <label>WhatsApp Phone number</label>
+                        <ion-input type="text"  [(ngModel)]="user.phone_number"></ion-input>
+                    </div>
+                    <div class="form-group m-b-xl">
+                        <label>Commodity you are Supplying (e.g. Maize, Yam)</label>
+                        <ion-input type="text"  [(ngModel)]="user.products"></ion-input>
+                    </div>
+                    <div class="form-group m-b-xl">
+                        <label>Password</label>
+                        <ion-input type="password"  [(ngModel)]="user.password"></ion-input>
+                    </div>
+                    <div class="form-group m-b-xl">
+                        <label>Confirm Password</label>
+                        <ion-input type="password"  [(ngModel)]="user.password2"></ion-input>
+                    </div>
+                    <div class="m-t-xl">
+                        <button class="btn-green full m-b-lg bold" tappable (click)="register(user)">Sign up</button>
+                        <button type="button" class="btn-flat full" (click)="goToLogin()">Have an account? Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+<!-- <ion-content>
     <div padding class="login-info">
         <ion-item>
             <ion-label floating>Company Name</ion-label>
@@ -32,9 +72,9 @@
                 <div *ngFor="let opt of value_chains">
 
                     <label>
-                            <input type="checkbox" name="vm.selectedPositions[]" [value]="opt" [checked]="selection.indexOf(opt) > -1" (click)="toggleSelection(opt)" />
-                            {{opt}}
-                            </label>
+                        <input type="checkbox" name="vm.selectedPositions[]" [value]="opt" [checked]="selection.indexOf(opt) > -1" (click)="toggleSelection(opt)" />
+                        {{opt}}
+                        </label>
                 </div>
             </ion-list>
         </ion-item>
@@ -69,4 +109,4 @@
         </ion-fab>
     </div>
 
-</ion-content>
+</ion-content> -->

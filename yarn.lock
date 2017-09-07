@@ -1666,39 +1666,43 @@ cordova-common@^2.0.1:
     underscore "^1.8.3"
     unorm "^1.3.3"
 
-cordova-plugin-console@~1.0.4:
+cordova-plugin-compat@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-compat/-/cordova-plugin-compat-1.1.0.tgz#92bdf169feb61205323dcc96a3ff8348e37e87fc"
+
+cordova-plugin-console@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz#89b7a92ed1c335888dfc00d902dc417201cf3b0b"
 
-cordova-plugin-device@~1.1.3:
+cordova-plugin-device@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz#2d21764cad7c9b801523e4e09a30e024b249334b"
 
-cordova-plugin-geolocation@~2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-geolocation/-/cordova-plugin-geolocation-2.2.0.tgz#c5d6466a8c12108218d492d20f7f1092cc45c551"
+cordova-plugin-geolocation@^2.2.0:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-geolocation/-/cordova-plugin-geolocation-2.4.3.tgz#1dd00023d1f1a2ce330f8767ed08f7b738fe7184"
 
-cordova-plugin-inappbrowser@~1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-1.4.0.tgz#b031f68e3c224ff15774a18711e962837125dce7"
+cordova-plugin-inappbrowser@^1.4.0:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-1.7.1.tgz#435b43f591fe7bfa95ea98dbe0004841fe59ba51"
 
-cordova-plugin-network-information@~1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-network-information/-/cordova-plugin-network-information-1.2.1.tgz#1fd7b72af0662415b955c57638f7b7767c843d98"
+cordova-plugin-network-information@^1.2.1:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-network-information/-/cordova-plugin-network-information-1.3.3.tgz#0ea9aa5c1124cf7cbd6f84f828a542cbd24a8518"
 
-cordova-plugin-splashscreen@~4.0.0:
+cordova-plugin-splashscreen@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-4.0.3.tgz#773cd1363c1f3bacb9901663e9e3793dd3e0a19d"
 
-cordova-plugin-statusbar@~2.2.0:
+cordova-plugin-statusbar@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.2.3.tgz#51c5e02ad433bebd0b0dc977a446eb91dfee1502"
 
-cordova-plugin-vibration@~2.1.1:
+cordova-plugin-vibration@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/cordova-plugin-vibration/-/cordova-plugin-vibration-2.1.5.tgz#485353a2fdfce71b0e4809c3f55771f8fa3e0623"
 
-cordova-plugin-whitelist@~1.3.0:
+cordova-plugin-whitelist@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.3.2.tgz#5b6335feb9f5301f3c013b9096cb8885bdbd5076"
 
@@ -3223,7 +3227,7 @@ ionic-native@^2.2.11:
   dependencies:
     rxjs "5.0.1"
 
-ionic-plugin-keyboard@~2.2.1:
+ionic-plugin-keyboard@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz#f2a9e169bbe9b5522400347c9fd6d3467ee3fa12"
 
