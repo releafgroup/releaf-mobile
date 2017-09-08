@@ -1,5 +1,6 @@
 $green: #81d76d;
 $lightgray: #F5F5F5;
+$lightergray: #fafafa;
 $gray: #8e8e8e;
 $gray2: #e0e0e0;
 $darkgray: #535353;
@@ -17,8 +18,13 @@ $blue: #5387CB;
   background: linear-gradient(48.84deg, #81D76D -6.14%, #81D76D -6.13%, #80D66E 10.79%, #67B788 53.16%, #458CAB 88.93%, #2D6EC4 111.64%);
 }
 %grad2{
-  background-image: linear-gradient(127.14335515224332deg, #009789 6.1%, #007fa2 62.6%, #007ea6 69.5%, #007cb2)
+  background-image: linear-gradient(127.14335515224332deg, #009789 6.1%, #007fa2 62.6%, #007ea6 69.5%, #007cb2);
 }
+%shadow{
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+
 @mixin tour-mixin($logoPaddingTop, $logoColor, $logoFontSize, $logoImageHeight, $contentTextColor){
 
   .logo{
@@ -128,9 +134,40 @@ span.green{
 .full{
   width: 100%;
 }
-
+.bg{
+  @extend %grad2;
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  top: -44px;
+}
 .content{
-  padding: 0 50px;
+  padding: 0 30px;
+}
+
+// Ionic tag styles
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  background: transparent;
+  border: 0;
+}
+.toolbar-background-md {
+  background: transparent !important;
+  border: 0 !important;
+}
+.toolbar-title-md{
+  font-size: 18px !important;
+}
+.toolbar-content-md {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+  color: white !important;
+}
+.toolbar-title-ios{
+  color: white !important;
 }
 
 // Margins and Paddings 
@@ -145,4 +182,7 @@ span.green{
 }
 .m-t-xl {
   margin-top: 40px;
+}
+.n-p{
+  padding: 0;
 }

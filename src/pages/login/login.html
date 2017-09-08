@@ -4,7 +4,6 @@
             <img src="assets/img/releaf-logo-green2.png" alt="Releaf Logo"/>
             Releaf
         </div>
-        <img src="assets/img/waves.svg" class="img-responsive waves" alt="waves">
         <div class="content">
             <h3 class="text-center light m-b-lg">
                 Sign In
@@ -12,11 +11,11 @@
             <form [formGroup]="form" (ngSubmit)="onConfirm(form.value, form.valid)" novalidate>
                 <div class="form-group m-b-xl">
                     <label>Email</label>
-                    <ion-input type="email"  formControlName="username" [(ngModel)]="username" autofocus></ion-input>
+                    <input type="email"  formControlName="username" [(ngModel)]="username" autofocus>
                 </div>
                 <div ng-class="form-group">
                     <label>Password</label>
-                    <ion-input type="password" formControlName="password" [(ngModel)]="password"></ion-input>
+                    <input type="password" formControlName="password" [(ngModel)]="password">
                 </div>
                 <div class="m-t-xl">
                     <button class="btn-green full m-b-lg bold" full tappable [disabled]="!form.valid" type="submit">Log in</button>

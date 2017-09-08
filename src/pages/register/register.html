@@ -11,27 +11,27 @@
                 <div>
                     <div class="form-group m-b-xl">
                         <label>Company Name</label>
-                        <ion-input type="text"  [(ngModel)]="user.company_name" autofocus></ion-input>
+                        <input type="text"  [(ngModel)]="user.company_name" autofocus>
                     </div>
                     <div class="form-group m-b-xl">
                         <label>Email</label>
-                        <ion-input type="email"  [(ngModel)]="user.email"></ion-input>
+                        <input type="email"  [(ngModel)]="user.email">
                     </div>
                     <div class="form-group m-b-xl">
                         <label>WhatsApp Phone number</label>
-                        <ion-input type="text"  [(ngModel)]="user.phone_number"></ion-input>
+                        <input type="text"  [(ngModel)]="user.phone_number">
                     </div>
                     <div class="form-group m-b-xl">
                         <label>Commodity you are Supplying (e.g. Maize, Yam)</label>
-                        <ion-input type="text"  [(ngModel)]="user.products"></ion-input>
+                        <input type="text"  [(ngModel)]="user.products">
                     </div>
                     <div class="form-group m-b-xl">
                         <label>Password</label>
-                        <ion-input type="password"  [(ngModel)]="user.password"></ion-input>
+                        <input type="password"  [(ngModel)]="user.password">
                     </div>
                     <div class="form-group m-b-xl">
                         <label>Confirm Password</label>
-                        <ion-input type="password"  [(ngModel)]="user.password2"></ion-input>
+                        <input type="password"  [(ngModel)]="user.password2">
                     </div>
                     <div class="m-t-xl">
                         <button class="btn-green full m-b-lg bold" tappable (click)="register(user)">Sign up</button>
@@ -46,22 +46,22 @@
     <div padding class="login-info">
         <ion-item>
             <ion-label floating>Company Name</ion-label>
-            <ion-input type="text" [(ngModel)]="user.company_name"></ion-input>
+            <input type="text" [(ngModel)]="user.company_name">
         </ion-item>
 
         <ion-item>
             <ion-label floating>Email</ion-label>
-            <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+            <input type="text" [(ngModel)]="user.email">
         </ion-item>
 
         <ion-item>
             <ion-label floating>WhatsApp Phone number</ion-label>
-            <ion-input type="text" [(ngModel)]="user.phone_number"></ion-input>
+            <input type="text" [(ngModel)]="user.phone_number">
         </ion-item>
 
         <ion-item>
             <ion-label floating>Commodity you are Supplying (e.g. Maize, Yam)</ion-label>
-            <ion-input type="text" [(ngModel)]="user.products"></ion-input>
+            <input type="text" [(ngModel)]="user.products">
         </ion-item>
 
         <ion-item>
@@ -81,12 +81,12 @@
 
         <ion-item>
             <ion-label floating>Password</ion-label>
-            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            <input type="password" [(ngModel)]="user.password">
         </ion-item>
 
         <ion-item>
             <ion-label floating>Confirm Password</ion-label>
-            <ion-input type="password" [(ngModel)]="user.password2"></ion-input>
+            <input type="password" [(ngModel)]="user.password2">
         </ion-item>
 
         <ion-item>
@@ -97,7 +97,7 @@
         </ion-item>
         <ion-item *ngIf="user.found_us_via === 'Other'">
             <ion-label>Please enter value ?</ion-label>
-            <ion-input type="text" [(ngModel)]="user.custom_found_us_via"></ion-input>
+            <input type="text" [(ngModel)]="user.custom_found_us_via">
         </ion-item>
         <ion-fab center>
             <button tappable (click)="register(user)" ion-button outline>Create My Account</button>
