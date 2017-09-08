@@ -19,26 +19,7 @@
         "type": "git",
         "url": ""
     },
-    "scripts": {
-        // "dev": "bnr dev",
-        // "build": "bnr build",
-        // "build-dev": "bnr build-dev",
-        // "clean": "bnr clean",
-        // "test": "bnr test",
-        // "test:watch": "bnr test-watch",
-        // "ios:dev": "bnr ios:dev",
-        // "ios:release": "bnr ios:release",
-        // "android:dev": "bnr android:dev",
-        // "android:release": "bnr android:release",
-        // "commit": "git-cz",
-        // "release": "standard-version --no-verify",
-        // "push": "git push --follow-tags origin master",
-        // "lint": "tslint \"src/**/*.ts\" --exclude=src/**/*.d.ts",
-        // "docs": "typedoc --options typedoc.json --exclude '**/*+(e2e|spec|index).ts' ./src/",
-        // "outdated": "yarn outdated",
-        // "precommit": "npm run lint",
-        // "prepush": "npm test"
-    },
+    "scripts": {},
     "betterScripts": {
         "dev": {
             "command": "ionic-app-scripts serve",
