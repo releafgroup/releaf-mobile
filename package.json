@@ -20,7 +20,7 @@
         "url": ""
     },
     "scripts": {
-        "start": "ionic serve",
+        "start": "ionic serve --platform android",
         "dev": "bnr dev",
         "build": "bnr build",
         "build-dev": "bnr build-dev",

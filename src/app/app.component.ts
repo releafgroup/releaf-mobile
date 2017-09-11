@@ -22,9 +22,9 @@ export interface PageInterface {
 export class ReleafMobile {
 
   appPages: PageInterface[] = [
-    {title: 'Home', component: HomePage, index: 1, icon: 'home'},
-    {title: 'About', component: AboutPage, index: 2, icon: 'more'},
-    {title: 'Logout', component: LoginPage, index: 3, icon: 'log-out'},
+    {title: 'Home', component: HomePage, index: 1, icon: 'md-home'},
+    {title: 'About', component: AboutPage, index: 2, icon: 'md-information-circle'},
+    {title: 'Logout', component: LoginPage, index: 3, icon: 'md-log-out'},
   ];
 
   rootPage: any = TourPage;

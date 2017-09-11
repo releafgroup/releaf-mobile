@@ -1,27 +1,32 @@
-<ion-header>
+<ion-header no-border>
     <ion-navbar>
-        <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        <ion-title>Connect Buyers</ion-title>
+        <!-- <button ion-button icon-only>
+            <ion-icon name="arrow-back"></ion-icon>
+        </button> -->
+        <ion-title>Request Product</ion-title>
     </ion-navbar>
-</ion-header>
-<ion-content class="map-page card-background-page">
-    <ion-grid>
-        <ion-row>
-            <ion-col col-6 col-md *ngFor="let p of pagedata">
-                <ion-card style="padding-bottom: 30px">
-                    <ion-card-header>
-                        {{p.commodity}}
-                    </ion-card-header>
-                    <ion-card-content>
-                        <ion-fab center class="fab-with-padding-buttom">
-                            <button [disabled]="p.disabled" (click)="requestToSell(p)" ion-fab mini><ion-icon name="add"></ion-icon></button>
-                        </ion-fab>
-                        <!--<button [disabled]="p.disabled" ion-button outline (click)="requestToSell(p)"> Request to Sell</button>-->
-                    </ion-card-content>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
-</ion-content>
+ </ion-header>
+    <ion-content>
+        <div class="bg"></div>
+        <div class="home product">
+            <div class="content">
+                <div class="item" *ngFor="let p of pagedata">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="assets/listing/{{p.commodity}}.jpg" class="item-img" />
+                        </div>
+                        <div class="col-xs-8 n-p">
+                            <div class="desc">
+                                <p>{{p.commodity}}</p>
+                            </div>
+                            <div class="pull-right">
+                                <button class="btn-flat" icon-only [disabled]="p.disabled" (click)="requestToSell(p)">
+                                    <ion-icon name="add-circle"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>

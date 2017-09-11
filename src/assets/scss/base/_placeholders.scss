@@ -144,6 +144,44 @@ span.green{
 .content{
   padding: 0 30px;
 }
+.app-menu{
+  .content-md{
+    background: $lightgray;
+  }
+  .menu-title{
+    background: transparent;
+    color: white;
+  }
+  .menu-content{
+    position: relative;
+    top: 116px;
+
+    ul{
+      list-style: none;
+      margin: none;
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+
+    li{
+      padding: 15px 0;
+      color: $blue;
+      font-size: 16px;
+    }
+    span{
+      padding-left: 15px;
+    }
+  }
+  .btn-flat{
+    margin-right: 10px;
+  }
+  h2{
+    position: relative;
+    top: 75px;
+    text-align: center;
+    color: white;
+  }
+}
 
 // Ionic tag styles
 .header-ios .toolbar-ios:last-child .toolbar-background-ios {
