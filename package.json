@@ -20,6 +20,7 @@
         "url": ""
     },
     "scripts": {
+        "start": "ionic serve",
         "dev": "bnr dev",
         "build": "bnr build",
         "build-dev": "bnr build-dev",
@@ -33,11 +34,12 @@
         "commit": "git-cz",
         "release": "standard-version --no-verify",
         "push": "git push --follow-tags origin master",
-        "lint": "tslint \"src/**/*.ts\" --exclude=src/**/*.d.ts",
         "docs": "typedoc --options typedoc.json --exclude '**/*+(e2e|spec|index).ts' ./src/",
         "outdated": "yarn outdated",
-        "precommit": "npm run lint",
-        "prepush": "npm test"
+        "android": "ionic cordova run android --device",
+        "android-live": "ionic cordova run android --device --livereload",
+        "apk": "ionic cordova build android --debug",
+        "apk-prod": "ionic cordova build android --prod --release"
     },
     "betterScripts": {
         "dev": {
@@ -121,22 +123,23 @@
         "@ionic/storage": "^2.0.0",
         "call-number": "^1.0.1",
         "cordova-android": "^6.2.3",
-        "cordova-plugin-console": "~1.0.4",
-        "cordova-plugin-device": "~1.1.3",
-        "cordova-plugin-geolocation": "~2.2.0",
-        "cordova-plugin-inappbrowser": "~1.4.0",
-        "cordova-plugin-network-information": "~1.2.1",
-        "cordova-plugin-splashscreen": "~4.0.0",
-        "cordova-plugin-statusbar": "~2.2.0",
-        "cordova-plugin-vibration": "~2.1.1",
-        "cordova-plugin-whitelist": "~1.3.0",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-geolocation": "^2.2.0",
+        "cordova-plugin-inappbrowser": "^1.4.0",
+        "cordova-plugin-network-information": "^1.2.1",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-vibration": "^2.1.5",
+        "cordova-plugin-whitelist": "^1.3.2",
         "cordova-sqlite-storage": "^2.0.4",
+        "handlebars": "^4.0.10",
         "ionic-angular": "2.2.0",
         "ionic-native": "2.4.1",
-        "ionic-plugin-keyboard": "~2.2.1",
+        "ionic-plugin-keyboard": "^2.2.1",
         "ionicons": "3.0.0",
         "lodash-es": "^4.17.4",
-        "mx.ferreyra.callnumber": "~0.0.2",
         "node-uuid": "^1.4.7",
         "phonegap-plugin-push": "^1.10.5",
         "rxjs": "5.0.1",
@@ -218,7 +221,6 @@
             "phonegap-plugin-push": {
                 "SENDER_ID": "340278238211"
             },
-            "mx.ferreyra.callnumber": {},
             "cordova-sqlite-storage": {}
         }
     }
