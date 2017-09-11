@@ -30,15 +30,15 @@ export class HomePage extends BasePage {
               ) {
     super(alertCtrl);
      this.categories = [
-      {title: 'Vegetables', image: 'vegetable.jpg', tag: 'General Vegetables, Ginger, Spices '},
-      {title: 'Oils', image: 'oils.jpg', tag: 'Oil Seed,  Palm Oil,Vegatable Oils'},
-      {title: 'Meat, Poultry and Fish', image: 'meat.jpg', tag: 'General Meat, Fish, Pork, Poultry'},
-      {title: 'Vegetables', image: 'vegetable.jpg', tag: 'General Vegetables, Ginger, Spices '},
-      {title: 'Legumes', image: 'legumes.jpg', tag: 'General Legaumes,  Soybean'},
-      {title: 'Fruits', image: 'fruits.jpg', tag: 'General Fruits,Palm Fruit, Pawpaw,Plaintain '},
-      {title: 'Agri-Business', image: 'agribusiness.jpg', tag: 'Agribusiness Machinery,Agribusiness Development Services,Agribusiness Pesticides,'},
-      {title: 'Cereals and Grains', image: 'cereals.jpg', tag: 'General Cereals Crops,Barley,Cotton,Maize,Rice,Sesame Seed,Sorghum,'},
-      {title: 'Beverages', image: 'beverages.jpg', tag: 'General Beverages,Alcoholic Beverages,Coffee,Milk,Juices,Malt,Soft Drinks,Water,Wine,'},
+      {title: 'Nuts and Kernels', image: 'vegetable.jpg', tag: 'General Nuts and Kernels,Cashew Nut,Cocoa,Palm Kernel,Kola Nut,Groundnuts,'},
+      {title: 'Oils', image: 'oils.jpg', tag: 'Oil Seed,Palm Oil,Vegatable Oils'},
+      {title: 'Meat, Poultry and Fish', image: 'meat.jpg', tag: 'General Meat,Fish,Pork,Poultry'},
+      {title: 'Vegetables', image: 'vegetable.jpg', tag: 'General Vegetables, Ginger,Spices,Onion,Pepper,Tomato,Potat'},
+      {title: 'Legumes', image: 'legumes.jpg', tag: 'General Legaumes,Soybean'},
+      {title: 'Fruits', image: 'fruits.jpg', tag: 'General Fruits,Palm Fruit,Pawpaw,Plaintain'},
+      {title: 'Agri-Business', image: 'agribusiness.jpg', tag: 'Agribusiness Machinery,Agribusiness Development Services,Agribusiness Pesticides'},
+      {title: 'Cereals and Grains', image: 'cereals.jpg', tag: 'General Cereals Crops,Barley,Cotton,Maize,Rice,Sesame Seed,Sorghum'},
+      {title: 'Beverages', image: 'beverages.jpg', tag: 'General Beverages,Alcoholic Beverages,Coffee,Milk,Juices,Malt,Soft Drinks,Water,Wine'},
       {title: 'Roots and Tubers', image: 'tubers.jpg', tag: 'Cassava,Ginger,'}
     ];
   }
