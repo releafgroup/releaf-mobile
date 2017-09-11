@@ -1,0 +1,9 @@
+.tour{
+  height: 100vh;
+  @extend %grad;
+  @include tour-mixin(50px, white, 34px, 40px, white);
+
+  .tagline{
+    margin-bottom: 100px;
+  }
+}
