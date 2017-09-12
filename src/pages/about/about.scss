@@ -1,40 +1,18 @@
-.about-header {
-    background-color: white;
-    padding: 16px;
-    width: 100%;
-    min-height: 150px;
-    text-align: center;
-}
-
-.about-header img {
-    max-width: 200px;
-    min-height: 115px;
-    margin-left: -15px;
-    padding: 25px 0 20px 0;
-}
-
-.about-info p {
-    color: #697072;
-    text-align: left;
-}
-
-.about-info ion-icon {
-    color: color($colors, primary);
-    width: 20px;
-}
-
-.md,
-.wp {
-    .about-info [text-right] {
-        margin-right: 0;
+.about{
+    @extend %home;
+    
+    .content{
+        height: calc(100vh - 50px);
     }
-}
-
-.ios .about-info {
-    text-align: center;
-}
-
-.ios .about-info ion-icon {
-    width: auto;
-    margin-right: 10px;
+    .item{
+        height: calc(100vh - 100px);
+        padding: 20px 50px;
+        text-align: center;
+        height: 200px;
+    }
+    img{
+        height: 50px;
+        width: initial;
+        margin-bottom: 20px;
+    }
 }

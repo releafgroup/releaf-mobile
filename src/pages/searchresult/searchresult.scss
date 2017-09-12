@@ -1,4 +1,5 @@
 .product{
+  @extend %home;
   .back-button-md{
     position: relative;
     z-index: 3;

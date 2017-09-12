@@ -1,14 +1,11 @@
 <ion-header no-border class="product">
     <ion-navbar>
-        <!-- <button ion-button icon-only>
-            <ion-icon name="arrow-back"></ion-icon>
-        </button> -->
         <ion-title>Request Product</ion-title>
     </ion-navbar>
  </ion-header>
     <ion-content>
         <div class="bg"></div>
-        <div class="home product">
+        <div class="product">
             <div class="content">
                 <button class="item" *ngFor="let p of pagedata" [disabled]="p.disabled" (click)="requestToSell(p)">
                     <div class="row">

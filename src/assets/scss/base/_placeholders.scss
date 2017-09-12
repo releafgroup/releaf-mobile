@@ -23,7 +23,42 @@ $blue: #5387CB;
 %shadow{
   box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
-
+%home{
+    .content{
+      padding: 20px 15px;
+      background: $lightergray;
+      height: 100vh;
+  }
+  .item{
+      @extend %shadow;   
+      height: 80px; 
+      margin-bottom: 15px;
+      border-radius: 5px;
+      background: white;
+  }
+  img{
+      height: 80px;
+      width: 80px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+  }
+  .desc{
+      padding: 10px 0;
+  }
+  p{
+      word-wrap: break-word;
+  }
+  p:nth-child(1){
+      font-size: 16px;
+      font-weight: 500;
+      color: $blue;
+      margin-top: 5px;
+  }
+  p:nth-child(2){
+      font-size: 13px;
+      color: $gray;
+  }
+}
 
 @mixin tour-mixin($logoPaddingTop, $logoColor, $logoFontSize, $logoImageHeight, $contentTextColor){
 
